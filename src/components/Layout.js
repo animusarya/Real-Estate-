@@ -5,11 +5,9 @@ import styled from 'styled-components';
 
 import config from '../utils/config';
 import Header from './Header';
-import './layout.css';
+import Footer from './Footer';
 
-const Container = styled.div`
-
-`;
+const Container = styled.div``;
 
 const IndexLayout = ({ children }) => (
   <div>
@@ -21,6 +19,7 @@ const IndexLayout = ({ children }) => (
     </Helmet>
     <Header />
     <Container>{children}</Container>
+    <Footer />
   </div>
 );
 
